@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center><h1>Library Management System</h1></center>
+    <div>
+      <!-- Form to add books  -->
+      <h2>Add Books</h2>
+      <form id="addBookForm">
+        Title: <input type="text" id="bookTitle" /><br />
+        Author: <input type="text" id="bookAuthor" /><br />
+        ISBN: <input type="text" id="bookISBN" /><br />
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+    <div>
+      <!-- Form to add members to the Library -->
+      <h2>Add Members</h2>
+      <form id="addMemberForm">
+        Name: <input type="text" id="memberName" /><br />
+        <button type="submit">Add Member</button>
+      </form>
+    </div>
+    <div>
+      <!-- Book Borrowing and Returning  -->
+      <h2>Borrow or Return a Book</h2>
+      Book ISBN: <input type="text" id="actionISBN" /><br />
+      Member Name: <input type="text" id="actionMemberName" /><br />
+      <button onclick="borrowBook()">Borrow Book</button>
+      <button onclick="returnBook()">Return Book</button>
+    </div>
+    <div>
+      <!-- Display Log -->
+      <h2>Library Log</h2>
+      <div id="libraryLog"></div>
+    </div>
+
+    <script src="./library.js"></script>
+  </body>
+</html>
